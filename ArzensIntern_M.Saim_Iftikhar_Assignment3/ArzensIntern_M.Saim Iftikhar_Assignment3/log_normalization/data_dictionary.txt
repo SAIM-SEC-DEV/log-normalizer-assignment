@@ -1,0 +1,12 @@
+Field             Type      Description
+timestamp         string    ISO 8601 UTC (YYYY-MM-DDTHH:MM:SSZ)
+source_ip         string    IPv4 address (may be private)
+event_type        string    Normalized category (FIREWALL, AUTH, DNS, FILE)
+user              string    Username or SYSTEM/UNKNOWN
+action            string    Normalized verb (ALLOW, DENY, SUCCESS, FAILURE, QUERY, READ, WRITE...)
+target            string    Destination IP, domain, or file path
+bytes             integer   Number of bytes (0 if not present)
+status            string    VALID, PRIVATE, INVALID_IP, UNPARSEABLE_TIMESTAMP, etc.
+raw_timestamp     string    Original timestamp as in log
+_source_type      string    Original format (firewall, auth, dns, file_json)
+_raw              string    Full original log line (for forensics)
