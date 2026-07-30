@@ -1,0 +1,9 @@
+timestamp,source_ip,event_type,user,action,target,bytes,status,raw_timestamp,_source_type,_raw
+2026-07-20T14:23:45Z,192.168.1.100,FIREWALL,SYSTEM,ALLOW,10.0.0.50,15234,VALID,2026-07-20 14:23:45,firewall,[2026-07-20 14:23:45] FIREWALL src=192.168.1.100 dst=10.0.0.50 action=ALLOW port=443 bytes=15234
+2026-07-20T14:23:45Z,192.168.1.100,AUTH,alice,SUCCESS,auth-server,0,VALID,2026-07-20T14:23:45Z,auth,"2026-07-20T14:23:45Z,auth-server,LOGIN,alice,192.168.1.100,SUCCESS"
+2026-07-20T14:23:45Z,192.168.1.100,DNS,SYSTEM,QUERY,malicious.example.com,0,VALID,Jul 20 14:23:45,dns,Jul 20 14:23:45 dns-server named[1234]: query: malicious.example.com IN A from 192.168.1.100
+2026-07-20T14:23:45Z,,FILE,bob,READ,/etc/passwd,0,VALID,2026-07-20 14:23:45,file_json,"{""timestamp"": ""2026-07-20 14:23:45"", ""event"": ""FILE_ACCESS"", ""user"": ""bob"", ""file"": ""/etc/passwd"", ""action"": ""READ""}"
+2026-07-20T14:25:10Z,10.0.0.5,FIREWALL,SYSTEM,DENY,8.8.8.8,0,VALID,2026-07-20 14:25:10,firewall,[2026-07-20 14:25:10] FIREWALL src=10.0.0.5 dst=8.8.8.8 action=DENY port=53 bytes=0
+2026-07-20T14:25:10Z,10.0.0.5,AUTH,charlie,FAILURE,auth-server,0,VALID,2026-07-20T14:25:10Z,auth,"2026-07-20T14:25:10Z,auth-server,LOGIN,charlie,10.0.0.5,FAILURE"
+2026-07-20T14:25:10Z,10.0.0.5,DNS,SYSTEM,QUERY,google.com,0,VALID,Jul 20 14:25:10,dns,Jul 20 14:25:10 dns-server named[1234]: query: google.com IN A from 10.0.0.5
+2026-07-20T14:25:10Z,,FILE,dave,WRITE,/var/log/syslog,0,VALID,2026-07-20 14:25:10,file_json,"{""timestamp"": ""2026-07-20 14:25:10"", ""event"": ""FILE_ACCESS"", ""user"": ""dave"", ""file"": ""/var/log/syslog"", ""action"": ""WRITE""}"

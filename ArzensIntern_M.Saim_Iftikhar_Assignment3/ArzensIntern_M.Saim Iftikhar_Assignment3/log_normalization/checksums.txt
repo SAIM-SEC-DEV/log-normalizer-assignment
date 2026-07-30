@@ -1,0 +1,7 @@
+Generated: 2026-07-30T12:51:18.274217Z
+sample_mixed_logs.txt:SHA256:e5517b804a8f7bb34dc289cfa454e5c5f0a9f24913ccf6b352e352e7254fd33b
+sample_mixed_logs.txt:MD5:11acaf49bf726e01573940472a016c8e
+sample_clean.csv:SHA256:7d1ea27e79db793156bc1ed676b7db09cf4bd9273cbff5a2b11be89467abf21f
+sample_clean.csv:MD5:5f68ed064f31ff7e84756c1f63fe9697
+sample_clean.json:SHA256:f5e1506b020e764687d264767fc97441ce5e3bd52275d1e99be1088a3bb9d91b
+sample_clean.json:MD5:62ac11cf8054884cf26afa6400c7da41
