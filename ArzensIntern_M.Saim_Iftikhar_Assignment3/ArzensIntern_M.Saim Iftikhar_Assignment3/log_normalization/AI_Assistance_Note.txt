@@ -1,0 +1,3 @@
+Tool(s) used: ChatGPT (OpenAI)
+Purpose & scope of assistance:
+Used for brainstorming script architecture, generating regex patterns for parsing the different log formats (firewall, auth, DNS, file JSON), debugging the timestamp normalization logic (handling multiple formats including syslog with missing years), and structuring the reproducibility package (README, checksum verification, and test scripts). All generated code was thoroughly reviewed, tested locally, and adapted to meet the specific assignment requirements. No code was copied verbatim without full understanding and modification.
