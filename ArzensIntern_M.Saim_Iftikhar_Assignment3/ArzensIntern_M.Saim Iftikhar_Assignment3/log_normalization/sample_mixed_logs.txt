@@ -1,0 +1,9 @@
+[2026-07-20 14:23:45] FIREWALL src=192.168.1.100 dst=10.0.0.50 action=ALLOW port=443 bytes=15234
+2026-07-20T14:23:45Z,auth-server,LOGIN,alice,192.168.1.100,SUCCESS
+Jul 20 14:23:45 dns-server named[1234]: query: malicious.example.com IN A from 192.168.1.100
+{"timestamp": "2026-07-20 14:23:45", "event": "FILE_ACCESS", "user": "bob", "file": "/etc/passwd", "action": "READ"}
+[2026-07-20 14:25:10] FIREWALL src=10.0.0.5 dst=8.8.8.8 action=DENY port=53 bytes=0
+2026-07-20T14:25:10Z,auth-server,LOGIN,charlie,10.0.0.5,FAILURE
+Jul 20 14:25:10 dns-server named[1234]: query: google.com IN A from 10.0.0.5
+{"timestamp": "2026-07-20 14:25:10", "event": "FILE_ACCESS", "user": "dave", "file": "/var/log/syslog", "action": "WRITE"}
+... (add more, including malformed lines like "bad log")
